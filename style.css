@@ -12,9 +12,20 @@
 li {
   list-style: none;
 }
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+img {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
 .menuSection {
   display: flex;
-  justify-content: space-evenly;
+
   gap: 3px;
   text-align: center;
 }
@@ -65,6 +76,7 @@ li {
   border-radius: 3px;
   background-color: white;
   font-weight: bold;
+  cursor: pointer;
 }
 .emailInput {
   padding: 3px;
@@ -76,12 +88,4 @@ li {
 ::placeholder {
   color: black;
   font-weight: bold;
-}
-img {
-  max-width: 100%;
-  display: block;
-  margin: auto;
-}
-.thumb {
-  object-fit: cover;
 }
